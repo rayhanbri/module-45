@@ -34,7 +34,7 @@ const router = createBrowserRouter([
       element:<User/>},
       {
         path:'user2',
-        element:<Suspense >
+        element:<Suspense fallback={<span>loading ..</span>} >
           <User2 userPromise={userPromise} ></User2>
         </Suspense>
       },
@@ -84,6 +84,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-     <RouterProvider router={router} />
+     <RouterProvider router={router} > </RouterProvider>
   </StrictMode>,
 )
