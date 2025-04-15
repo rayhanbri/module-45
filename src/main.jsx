@@ -11,34 +11,33 @@ import Root from './components/Root/Root.jsx';
 import Home from './components/Home/Home.jsx';
 import Mobiles from './components/Mobiles/Mobiles.jsx';
 import Laptops from './components/Laptops/Laptops.jsx';
-import User from './components/User/User.jsx';
+import User from './components/User/Users.jsx';
 import User2 from './components/User2/User2.jsx';
 import UserDetails from './components/UserDetails/UserDetails.jsx';
+import Users from './components/User/Users.jsx';
 
 const userPromise = fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json())
 
 const router = createBrowserRouter([
   {
     path: "/",
-   Component: Root,
+   element: <Root />,
    children:[
-    {index:true,Component:Home},
-    {path:'mobile',Component:Mobiles},
-    {path:'laptop',Component:Laptops},
+    {index:true,element:<Home />},
+    {path:'mobile',element:<Mobiles />},
+    {path:'laptop',element:<Laptops />},
     {path:'user',
       loader:()=>fetch("https://jsonplaceholder.typicode.com/users"),
-      Component:User},
+      element:<User/>},
       {
         path:'user2',
         element:<Suspense fallback={<span>loading ... </span>}>
           <User2 userPromise={userPromise} ></User2>
         </Suspense>
       },
-      {
-        path:'user/:userid',
-        Component:UserDetails,
-
-      }
+    
+     
+     
 
    ]
   },
