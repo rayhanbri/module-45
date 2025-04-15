@@ -15,7 +15,7 @@ const UserData = ({user}) => {
       <h2>Name: {name}</h2>
       <h2>Phone:{phone}</h2>
       <p><small>{email}</small></p>
-      <Link to={`/user/${id}`}>Show Details</Link>
+      <Link to={`/users/${id}`}>Show Details</Link>
     </div>
   );
 };
