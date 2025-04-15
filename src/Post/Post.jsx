@@ -8,7 +8,7 @@ const Post = ({post}) => {
 
   const handleNavigate= ()=>{
      
-    navigate ('/');
+    navigate (`/posts/${post.id}`);
 
   }
   
