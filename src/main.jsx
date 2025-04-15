@@ -11,6 +11,7 @@ import Root from './components/Root/Root.jsx';
 import Home from './components/Home/Home.jsx';
 import Mobiles from './components/Mobiles/Mobiles.jsx';
 import Laptops from './components/Laptops/Laptops.jsx';
+import User from './components/User/User.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,8 @@ const router = createBrowserRouter([
    children:[
     {index:true,Component:Home},
     {path:'mobile',Component:Mobiles},
-    {path:'laptop',Component:Laptops}
+    {path:'laptop',Component:Laptops},
+    {path:'user',Component:User}
 
    ]
   },
