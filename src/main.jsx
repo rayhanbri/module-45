@@ -21,7 +21,9 @@ const router = createBrowserRouter([
     {index:true,Component:Home},
     {path:'mobile',Component:Mobiles},
     {path:'laptop',Component:Laptops},
-    {path:'user',Component:User}
+    {path:'user',
+      loader:()=>fetch("https://jsonplaceholder.typicode.com/users"),
+      Component:User}
 
    ]
   },
