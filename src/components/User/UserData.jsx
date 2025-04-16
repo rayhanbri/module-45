@@ -1,11 +1,14 @@
 import React, { Suspense, useState } from 'react';
-import { Link, Navigate } from 'react-router';
+import { Link, Navigate, useLocation} from 'react-router';
 import UserDetails2 from '../UserDetails2/UserDetails2';
 
 const UserData = ({user}) => {
   const [showinfo,setShowInfo] = useState(false);
   const [visitHome,setVisitHome]=useState(false);
   const {id,name,phone,email} =user;
+  const location = useLocation();
+  console.log(location)
+
 
   const userPromise = fetch(`https://jsonplaceholder.typicode.com/users/${id}`).then(res => res.json())
 
@@ -18,6 +21,8 @@ const UserData = ({user}) => {
   if(visitHome){
     return <Navigate to="/"></Navigate>
   }
+  
+  
   return (
     <div style={userStyle}>
       <h2>Name: {name}</h2>
