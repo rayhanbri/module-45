@@ -2,10 +2,11 @@ import React from 'react';
 import { useLoaderData } from 'react-router';
 import UserData from './UserData';
 
+// how to fetch data with useLoaderData() 
+
 const User = () => {
 
    const users =useLoaderData();
-
    console.log(users)
   return (
     <div>

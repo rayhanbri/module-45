@@ -1,5 +1,7 @@
 import React, { use } from 'react';
 
+// How fetch data in react way 
+
 const User2 = ({userPromise}) => {
 
    const userData = use(userPromise)

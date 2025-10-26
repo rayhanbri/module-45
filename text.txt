@@ -1,0 +1,23 @@
+1.what is single page application
+2. advantages of it 
+3.react router doc study about different react router mood
+4.what strict mode and app component
+5.what is outlet
+6.index true
+7.why we use link instead of link
+
+
+module flow - - 
+
+1. how to  set up react router 
+2.sidebar and active route style
+3.Users and Users2
+4.UserDetails from user  page
+5.just get the params in dynamic route 
+6.ignore post it same as users 
+7.navigate useNavigate
+8.navigation and pending ui 
+9.show and hide info
+10.not found childern er modde dile majkhaner page e dhekhabhe ar sobar niche dile  hole page e dhekhabhe 
+11.navigation
+12.useLocation
