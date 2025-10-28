@@ -8,6 +8,7 @@ import "./Root.css"
 const Root = () => {
   const navigation = useNavigation();
   const isNavigating = Boolean(navigation.location);
+  console.log(isNavigating)
   return (
     <div>
       <Header></Header>

@@ -1,0 +1,25 @@
+1. What is outlet 
+
+<Outlet> = “Render the child route here” in a layout component.
+
+2.what is index true > 
+index = default child route of the parent route.
+
+It renders when the parent route matches exactly, and no child path is specified.
+
+## why we use link intead of a 
+In a Single Page Application (SPA) like React:
+
+Navigation between pages does not reload the whole page.
+
+Using a standard <a> tag triggers a full page reload, which breaks the SPA behavior.
+
+<Link> is provided by React Router to handle client-side routing without reloading the page.
+
+
+##1. what is StirctMode 
+
+// React.StrictMode is a special wrapper component that helps developers find potential problems in their React app during development (not in production).
+// 1. Detects Unsafe Lifecycle Methods
+// 2. Highlights Side Effects
+//it runs code twice for findings side effet
